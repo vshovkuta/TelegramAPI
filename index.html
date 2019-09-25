@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bot Console</title>
+  <link href="style/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <script defer type="module" src="app/main.js"></script>
+  <div id="console">
+    <h1>Bot console:</h1>
+    <div>
+      <h2>Sent message to all members:</h2>
+      <div class="control">
+        <input type="text" id="message-value" placeholder="Enter your message">
+        <input type="button" id="message-send" value="Send">
+      </div>
+    </div>
+    <div>
+      <h2>Message log:</h2>
+      <div class="control">
+        <div id="message-log"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
