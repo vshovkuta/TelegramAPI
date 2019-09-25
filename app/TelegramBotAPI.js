@@ -19,7 +19,7 @@ export class TelegramBotAPI {
   }
 
   async getUpdates(allowed_updates = ['message']) {
-    return await fetch(`${this.baseURL}/getUpdates?allowed_updates=${allowed_updates}`)
+    await fetch(`${this.baseURL}/getUpdates?allowed_updates=${allowed_updates}`)
       .then((APIresult) => APIresult.json())
       .then((APIresult) => this.resultObject = APIresult)
   }
